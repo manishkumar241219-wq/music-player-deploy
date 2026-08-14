@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Roadways Music</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BACKGROUND VIDEOS
+    ====================================================== -->
+
+    <div class="background-videos">
+
+        <video
+            id="backgroundVideoA"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        ></video>
+
+
+        <video
+            id="backgroundVideoB"
+            muted
+            loop
+            playsinline
+            preload="auto"
+        ></video>
+
+    </div>
+
+
+    <div class="background-overlay"></div>
+
+
+
+    <!-- =====================================================
+         STATE DROPDOWN
+    ====================================================== -->
+
+    <div class="state-selector">
+
+        <label for="stateSelect">
+            State
+        </label>
+
+
+        <select id="stateSelect">
+
+            <option value="uttarakhand">
+                Uttarakhand
+            </option>
+
+            <option value="haryana">
+                Haryana
+            </option>
+
+            <option value="tamil-nadu">
+                Tamil Nadu
+            </option>
+
+            <option value="uttar-pradesh">
+                Uttar Pradesh
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         DISCLAIMER
+    ====================================================== -->
+
+    <div class="disclaimer">
+
+        Disclaimer: All visuals on this website are AI-generated
+        and created for creative and illustrative purposes only.
+        They are not accurate depictions or representations of
+        the real world and are not intended to hurt or offend
+        anyone’s sentiments.
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MUSIC PLAYER
+    ====================================================== -->
+
+    <div class="music-player">
+
+
+        <div class="song-info">
+
+            <div
+                class="song-title"
+                id="songTitle"
+            >
+                Loading song...
+            </div>
+
+
+            <div
+                class="state-name"
+                id="stateName"
+            >
+                Uttarakhand Music
+            </div>
+
+        </div>
+
+
+
+        <!-- PROGRESS BAR -->
+
+        <div
+            class="progress"
+            id="progress"
+        >
+
+            <div
+                class="progress-bar"
+                id="progressBar"
+            ></div>
+
+        </div>
+
+
+
+        <!-- TIME -->
+
+        <div class="time">
+
+            <span id="currentTime">
+                0:00
+            </span>
+
+
+            <span id="duration">
+                0:00
+            </span>
+
+        </div>
+
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+            <button
+                class="skip-button"
+                id="previousButton"
+                title="Previous song"
+                aria-label="Previous song"
+            >
+                ⏮
+            </button>
+
+
+            <button
+                class="play-button"
+                id="playButton"
+                title="Play"
+                aria-label="Play or pause"
+            >
+                ▶
+            </button>
+
+
+            <button
+                class="skip-button"
+                id="nextButton"
+                title="Next song"
+                aria-label="Next song"
+            >
+                ⏭
+            </button>
+
+        </div>
+
+
+
+        <!-- STATUS -->
+
+        <div
+            class="status"
+            id="status"
+        ></div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HIDDEN YOUTUBE PLAYER
+    ====================================================== -->
+
+    <div id="youtube-player"></div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
